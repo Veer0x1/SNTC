@@ -1,6 +1,4 @@
 // https://codepen.io/yudizsolutions/pen/yLZaJMx
-import Link from "next/link"
-// import { useEffect } from "react"
 
 //importing stylesheets
 import style from './Technex.module.css'
@@ -8,13 +6,13 @@ import style from './Technex.module.css'
 //importing components
 import Box from "./Box"
 import BgImg from "./BgImg"
+import TypedText from './TypedText'
+//importing components from next
+import Link from "next/link"
 import Image from "next/image"
 
 const Technex: React.FC = () => {
 
-//   useEffect(()=>{
-
-//   })
   return (
     <main className="overflow-x-hidden m-0 bg-[#212121] bg-Technex-bg min-h-screen w-screen">
       {/* here in section orignally width is specified as 780px  we will test it again after media queries*/}
@@ -22,7 +20,8 @@ const Technex: React.FC = () => {
         <div className={`${style.left_part} p-0 pt-[20px] overflow-hidden`}>
           <h1 className="font-Extenda m-0 text-white text-[clamp(100px,18.5vw,282px)] leading-[0.75] font-normal not-italic uppercase">
             <span className="flex items-center">We make</span>
-            <span className={`${style.text} text-[#f1e728] block h-[200px]`}></span>
+            {/* <span className={`${style.text} text-[#f1e728] block h-[200px]`}></span> */}
+            <TypedText/>
           </h1>
           <p className="w-[72%] mt-[20px] text-white text-[16px] font-normal not-italic leading-[2] font-monument opacity-[0.8]">
             We create classNames every next month with our new talented creators
