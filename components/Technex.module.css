@@ -1,0 +1,137 @@
+.book_link:hover .linktext:before {
+    transform: scaleX(0);
+    transform-origin: 100% 100%;
+  }
+
+.book_link:hover .arrow::before {
+    width: 65%;
+  }
+  
+.book_link:hover .arrow::after {
+    height: 65%;
+  }
+
+  @media screen and (min-width: 1500px) {
+    .info_section {
+      padding-left: 120px;
+    }
+  }
+  
+  @media screen and (min-width: 1400px) {
+    .info_section {
+      padding-left: 100px;
+    }
+  }
+  
+  @media screen and (max-width: 1199px) {
+    .bg_line {
+      height: 68px;
+    }
+  
+    .right_part {
+      height: 400px;
+      width: 400px;
+    }
+  
+    .d_flex {
+      gap: 20px;
+    }
+  
+    .main_grid::before,
+    .box {
+      height: 118px;
+    }
+  
+    .box {
+      width: 118px;
+      font-size: 12px;
+    }
+  
+    .left_part p {
+      font-size: 14px;
+      line-height: 1.8;
+      width: 85%;
+    }
+  
+    .left_part h1 .text {
+      height: 132px;
+    }
+  
+    .bg_dash_circle {
+      width: 130px;
+    }
+  
+    .bg_circle_h_line {
+      width: 156px;
+      height: 92px;
+    }
+  
+    .book_link {
+      font-size: 48px;
+      gap: 24px;
+    }
+  
+    .book_link .arrow {
+      height: 28px;
+      width: 28px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .info_section {
+      display: block;
+      padding: 0;
+    }
+  
+    .bg_line {
+      height: 52px;
+    }
+  
+    .left_part {
+      padding: 40px 16px 60px;
+    }
+  
+    .right_part {
+      height: 334px;
+      width: 334px;
+    }
+  
+    .left_part h1 .text {
+      height: 88px;
+    }
+  
+    .left_part p {
+      font-size: 12px;
+      width: 96%;
+    }
+  
+    .main_grid::before,
+    .box {
+      height: 96px;
+    }
+  
+    .box {
+      width: 96px;
+      font-size: 10px;
+    }
+  
+    .book_link .arrow {
+      height: 24px;
+      width: 24px;
+    }
+  
+    .book_link {
+      font-size: 42px;
+      gap: 20px;
+      margin-top: 24px;
+    }
+  
+    .bg_dash_circle {
+      width: 80px;
+    }
+  
+    .bg_circle_h_line {
+      width: 126px;
+      height: 65px;
+    }
+  }
