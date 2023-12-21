@@ -12,25 +12,29 @@ type AboutProps = {
 }
 
 
-const update = ():any => {
-    gsap.registerPlugin(ScrollTrigger);
-    const splitTypes = document.querySelectorAll(".text-reveal");
-    splitTypes.forEach((char) => {
-      const text = new SplitType(char, { types: 'chars' });
-      gsap.from(text.chars,{
-        scrollTrigger: {
-          trigger: char,
-          start: "top 80%",
-          end: "top 20%",
-          scrub: true,
-          markers: false,
-        },
-        opacity: 0.8,
-        stagger: 0.1
-      });
+
+
+const update = (): any => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const splitTypes = document.querySelectorAll<HTMLElement>(".text-reveal");
+
+  splitTypes.forEach((char: HTMLElement) => {
+    const text = new SplitType(char, { types: 'chars' });
+
+    gsap.from(text.chars, {
+      scrollTrigger: {
+        trigger: char,
+        start: "top 80%",
+        end: "top 20%",
+        scrub: true,
+        markers: false,
+      },
+      opacity: 0.8,
+      stagger: 0.1,
     });
-  
-  };
+  });
+};
   
 
 const About: FC<AboutProps> = (props) => {
