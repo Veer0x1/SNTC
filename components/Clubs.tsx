@@ -64,7 +64,7 @@ const Clubs: React.FC = () => {
               className={` flex justify-center items-center ${styles.panel} `}
             >
               <Image
-                src="/CSI.JPG"
+                src="/CSI logo.JPG"
                 width={80}
                 height={80}
                 alt=""
