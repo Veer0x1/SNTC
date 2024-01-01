@@ -3,7 +3,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import styles from "./clubs.module.css";
+import styles from "./clubsdemo.module.css";
 import Navbar from "@/components/Navbar";
 import { WindowIcon } from "@heroicons/react/16/solid";
 const Clubs: React.FC = () => {
