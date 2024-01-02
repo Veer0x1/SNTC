@@ -1,18 +1,12 @@
 import React, { FC } from "react";
-import SplitType from 'split-type';
+import SplitType from "split-type";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { fadein } from "./Variants";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-
-type AboutProps = {
-   
-}
-
-
-
+type AboutProps = {};
 
 const update = (): any => {
   gsap.registerPlugin(ScrollTrigger);
@@ -20,7 +14,7 @@ const update = (): any => {
   const splitTypes = document.querySelectorAll<HTMLElement>(".text-reveal");
 
   splitTypes.forEach((char: HTMLElement) => {
-    const text = new SplitType(char, { types: 'chars' });
+    const text = new SplitType(char, { types: "chars" });
 
     gsap.from(text.chars, {
       scrollTrigger: {
@@ -35,16 +29,14 @@ const update = (): any => {
     });
   });
 };
-  
 
 const About: FC<AboutProps> = (props) => {
+  const [ref, InView] = useInView({
+    threshold: 0.5,
+  });
 
-    const [ref, InView] = useInView({
-        threshold: 0.5,
-    })
-
-    return (
-        <>
+  return (
+    <>
       <div
         className="bg-black section mt-36 mb-48"
         id="About"
@@ -87,9 +79,7 @@ const About: FC<AboutProps> = (props) => {
         </div>
       </div>
     </>
-    )
-}
-
-
+  );
+};
 
 export default About;
