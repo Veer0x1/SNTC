@@ -131,7 +131,7 @@ const Clubs: React.FC = () => {
           </div>
         </div>
         <div
-          className={` px-auto flex flex-wrap gap-10 items-center justify-center
+          className={`pb-40 px-auto flex flex-wrap  items-center justify-between
            ${styles.pagination}`}
         >
           <button className="" type="button" id="prev" onClick={handleprev}>
