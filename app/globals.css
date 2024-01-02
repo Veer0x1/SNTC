@@ -32,6 +32,25 @@
 
 @layer base {
   :root {
+
+   /* About section variables  ------------------------------------------------------------------------------ */
+    --bg: hsl(0 0% 2%);
+    --color: hsl(0 0% 100% / 0.1);
+    --underline-width: 1lh;
+    --underline-block-width: 200vmax;
+    --underline-color: hsl(0 0% 50% / 0.05);
+    --underline-transition: 2s;
+    --finish-fill: hsl(0 0% 100%);
+    --accent: hsl(0 0% 100%);
+    --fill: hsl(0 0% 50%);
+
+    /* ------------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
