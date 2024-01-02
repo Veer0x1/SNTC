@@ -25,6 +25,12 @@ module.exports = {
       'monument': ['monument_extendedregular']
     },
     extend: {
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+      },
       width:{
         "1/3-16": "calc((100%/3) - 16%)"
       },

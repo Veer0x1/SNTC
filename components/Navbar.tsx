@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-gray-900 border-gray-200 mt-6 rounded-lg w-3/4 fixed left-0 right-0 mx-auto">
+    <nav className="bg-gray-900 border-gray-200 mt-6 rounded-lg w-3/4 fixed left-0 right-0 mx-auto z-50">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-10 py-2">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <Image src="/logo.svg" alt="logo" width={60} height={60} />
