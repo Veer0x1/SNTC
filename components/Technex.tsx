@@ -32,7 +32,7 @@ const Technex: React.FC = () => {
             style={{ textDecoration: "none" }}
           >
             <span className={`${style.linktext} relative overflow-hidden inline-block before:content-[''] before:absolute before:left-0 before:bottom-[6px] before:w-full before:h-[3px] before:bg-white before:scale-x-100 before:transition-translate before:duration-300 before:ease-in-out before:origin-origin`}>
-              Book Your seat now
+              Visit our website now
             </span>
             <span className={`${style.arrow} h-[36px] w-[36px] top-[-5px] inline-block relative overflow-hidden before:absolute before:content-[''] before:bg-[#f1e728] before:transition-all before:ease-in-out before:duration-300 before:origin-origin before:rounded-[30px] before:h-[2px] before:w-full before:top-0 before:right-0 after:absolute after:contents-[''] after:bg-[#f1e728] after:transition-all after:origin-origin after:rounded-[30px] after:ease-in-out after:duration-300 after:w-[2px] after:h-full after:top-0 after:right-0`}>
               <span className="bg-[#f1e728] h-[2px] w-full inline-block top-0 left-0 absolute rounded-[30px] origin-right-top transition-all ease-in-out duration-300 rotate-[-45deg] translate-x-[-3px] translate-y-[-1px] before:absolute before:bg-[#f1e728] before:content-[''] before:h-full before:w-[15px] before:left-[-15px] before:top-0"></span>

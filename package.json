@@ -12,6 +12,8 @@
     "@heroicons/react": "^2.0.18",
     "@material-tailwind/react": "^2.1.5",
     "@radix-ui/react-slot": "^1.0.2",
+    "@react-three/fiber": "^8.15.13",
+    "@types/three": "^0.160.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "framer-motion": "^10.16.16",
@@ -24,6 +26,7 @@
     "split-type": "^0.3.4",
     "tailwind-merge": "^2.1.0",
     "tailwindcss-animate": "^1.0.7",
+    "three": "^0.160.0",
     "typed.js": "^2.1.0"
   },
   "devDependencies": {

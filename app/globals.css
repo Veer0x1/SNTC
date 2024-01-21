@@ -116,8 +116,14 @@
 @layer base {
   * {
     @apply border-border;
+    @apply box-border;
+  }
+  *::before,
+  *::after{
+    @apply box-border;
   }
   body {
     @apply bg-background text-foreground;
   }
+
 }
