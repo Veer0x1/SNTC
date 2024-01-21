@@ -375,6 +375,9 @@ module.exports = {
       },
       objectPosition : {
         "center-center" :"center center"
+      },
+      boxShadow: {
+        'custom': '5px 7px 17px rgba(0, 0, 0, 0.2)',
       }
     },
   },
