@@ -1,54 +1,99 @@
 "use client"
-import React, { useState } from 'react';
-import Image from 'next/image';
 
-const Navbar: React.FC = () => {
-  const [nav, setNav] = useState('hidden');
+import React from "react";
+import Logo from "@/public/logo.svg";
+import Image from "next/image";
+import {Button} from "@/components/ui/button";
 
-  const toggleNav = () => {
-    setNav(nav === 'hidden' ? 'block' : 'hidden');
-  };
+
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import {Menu} from "lucide-react";
+
+
+const Navbar :React.FC = () => {
+  // const [open, setOpen] = React.useState(false);
+  // const [flyer, setFlyer] = React.useState(false);
+  // const [flyerTwo, setFlyerTwo] = React.useState(false);
+  const [position, setPosition] = React.useState("home")
 
   return (
-    <nav className="bg-gray-900 border-gray-200 mt-6 rounded-lg w-3/4 fixed left-0 right-0 mx-auto z-50">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-10 py-2">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <Image src="/logo.svg" alt='logo' width={60} height={60} />
-        </a>
-        <button
-          type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default"
-          aria-expanded={nav === 'hidden' ? 'false' : 'true'}
-          onClick={toggleNav}
-        >
-          <span className="sr-only">Open main menu</span>
-          <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg>
-        </button>
-        <div className={`w-full md:block md:w-auto ${nav}`} id="navbar-default">
-        <ul className="font-medium text-xs flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 text-white">
-          <li>
-            <a href="https://sntciitbhu.co.in/#home" className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
-          </li>
-          <li>
-            <a href="https://sntciitbhu.co.in/Ourclubs" className="block py-2 px-3 text-whites rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Club</a>
-          </li>
-          <li>
-            <a href="https://sntciitbhu.co.in/events" className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Events</a>
-          </li>
-          <li>
-            <a href="https://sntciitbhu.co.in/#achievements" className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Acheivements</a>
-          </li>
-          <li>
-            <a href="https://sntciitbhu.co.in/#contacts" className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-    );
-};
+      <>
+        <div className="relative">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="flex justify-between items-center border-b-2 border-primary py-4 px-8 md:justify-start md:space-x-10">
+              <div className="flex justify-start lg:w-0 lg:flex-1">
+                <a href="#">
+                  <span className="sr-only text-white">Workflow</span>
+                  <Image
+                      className="h-8 w-auto sm:h-10 bg-white"
+                      height={60}
+                      width={60}
+                      src={Logo}
+                      alt="SNTC Logo"
+                  />
+                </a>
+              </div>
+              <div className="-mr-2 -my-2 md:hidden">
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Button variant="outline"><Menu /></Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className="w-56">
+                    <DropdownMenuLabel>Navigation</DropdownMenuLabel>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
+                      <DropdownMenuRadioItem value="home">Home</DropdownMenuRadioItem>
+                      <DropdownMenuRadioItem value="clubs">Clubs</DropdownMenuRadioItem>
+                      <DropdownMenuRadioItem value="events">Events</DropdownMenuRadioItem>
+                      <DropdownMenuRadioItem value="achievements">Achievements</DropdownMenuRadioItem>
+                      <DropdownMenuRadioItem value="contact">Contact</DropdownMenuRadioItem>
+                    </DropdownMenuRadioGroup>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              </div>
+              <nav className="hidden md:flex space-x-10">
+                  <Button
+                      type="button"
+                      variant={'ghost'}
+                  >
+                   Home
+                  </Button>
 
+                <Button
+                    variant={'ghost'}
+                >
+                  Clubs
+                </Button>
+                  <Button
+                      type="button"
+                      variant={'ghost'}
+                  >
+                   Events
+                  </Button>
+
+                <Button
+                    variant={'ghost'}
+                >
+                  Achievements
+                </Button>
+                <Button
+                    variant={'ghost'}
+                >
+                 Contact
+                </Button>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </>
+  );
+};
 export default Navbar;
