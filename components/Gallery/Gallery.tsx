@@ -104,7 +104,9 @@ const Gallery: React.FC = () => {
       },[])
 
   return (
-    <main className="container1 w-screen h-screen select-none overflow-hidden">
+    <>
+    <div className="w-screen h-screen"></div>
+    <main className="w-screen absolute top-0 left-0 h-screen select-none overflow-hidden overflow-y-hidden">
         <div className="center h-screen absolute left-1/2 top-[-33%] translate-x-1/2 translate-y-1/2 select-none">
           <div className="items rotate-0 select-none flex origin-center-200vh">
             <GalleryCard link="https://www.themoviedb.org/t/p/original/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg"/>
@@ -128,6 +130,7 @@ const Gallery: React.FC = () => {
           </div>
         </div>
     </main>
+    </>
   )
 }
 

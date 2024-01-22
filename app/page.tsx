@@ -6,7 +6,7 @@ import Gallery from '@/components/Gallery/Gallery'
 export default function Home() {
   return (
     <>
-    <Navbar />
+    {/* <Navbar /> */}
     {/* <About/> */}
     {/* <Achievements></Achievements> */}
     <Gallery></Gallery>
