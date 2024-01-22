@@ -1,0 +1,13 @@
+@media screen and (max-height: 1000px) {
+    .card {
+      width: 350px;
+      height: 497px;
+    }
+  }
+  
+  @media screen and (max-height: 800px) {
+    .card {
+      width: 300px;
+      height: 400px;
+    }
+  }

@@ -1,16 +1,15 @@
-
-import Technex from '@/components/Technex'
+import Navbar from '@/components/Navbar'
+import Technex from '@/components/Technex/Technex'
 import About from '@/components/About/About'
 import Achievements from '@/components/Achievments/Achievements'
-// import HelmCard from "@/components/cards/HelmCard";
-import Helm from "@/components/Helm";
+import Gallery from '@/components/Gallery/Gallery'
 export default function Home() {
   return (
     <>
-     <About/>
-    <Achievements/>
-        {/*<HelmCard/>*/}
-        <Helm />
+    {/* <Navbar /> */}
+    {/* <About/> */}
+    {/* <Achievements></Achievements> */}
+    <Gallery></Gallery>
     </>
   )
 }
