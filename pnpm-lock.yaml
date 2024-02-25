@@ -36,10 +36,10 @@ dependencies:
     specifier: ^0.7.0
     version: 0.7.0
   clsx:
-    specifier: ^2.0.0
+    specifier: ^2.1.0
     version: 2.1.0
   framer-motion:
-    specifier: ^10.16.16
+    specifier: ^10.17.12
     version: 10.17.12(react-dom@18.2.0)(react@18.2.0)
   gsap:
     specifier: ^3.12.4
@@ -63,7 +63,7 @@ dependencies:
     specifier: ^0.3.4
     version: 0.3.4
   tailwind-merge:
-    specifier: ^2.1.0
+    specifier: ^2.2.0
     version: 2.2.0
   tailwindcss-animate:
     specifier: ^1.0.7
