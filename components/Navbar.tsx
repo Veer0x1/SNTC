@@ -16,6 +16,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import {Menu} from "lucide-react";
+import Link from "next/link";
 
 
 const Navbar :React.FC = () => {
@@ -51,7 +52,9 @@ const Navbar :React.FC = () => {
                     <DropdownMenuSeparator />
                     <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
                       <DropdownMenuRadioItem value="home">Home</DropdownMenuRadioItem>
+                      <Link href={'/clubs'}>
                       <DropdownMenuRadioItem value="clubs">Clubs</DropdownMenuRadioItem>
+                      </Link>
                       <DropdownMenuRadioItem value="events">Events</DropdownMenuRadioItem>
                       <DropdownMenuRadioItem value="achievements">Achievements</DropdownMenuRadioItem>
                       <DropdownMenuRadioItem value="contact">Contact</DropdownMenuRadioItem>
