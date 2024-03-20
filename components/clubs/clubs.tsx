@@ -15,10 +15,6 @@ export function TracingBeamDemo() {
                         <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
                             {item.badge}
                         </h2>
-
-                        {/*<p className={twMerge(calsans.className, "text-xl mb-4")}>*/}
-                        {/*    {item.title}*/}
-                        {/*</p>*/}
                         <p className={twMerge("text-xl mb-4")}>
                             {item.title}
                         </p>
@@ -46,7 +42,7 @@ export function TracingBeamDemo() {
 
 const dummyContent = [
     {
-        title: "Lorem Ipsum Dolor Sit Amet",
+        title: "Club of Programmers (COPS)",
         people:
             [
                 {

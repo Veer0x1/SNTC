@@ -22,6 +22,7 @@ export default function Hero() {
         >
             <GoogleGeminiEffect
                 title={"SNTC IIT BHU Varanasi"}
+                description="Science and Technology Council"
                 pathLengths={[
                     pathLengthFirst,
                     pathLengthSecond,
