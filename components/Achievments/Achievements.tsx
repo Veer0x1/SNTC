@@ -21,6 +21,36 @@ const AchievmentsData = [
       "Silicon Lab Entrepreneurship Challenge",
     icon: BronzeMedal,
   },
+  {
+    title: "Bronze Medal",
+    description:
+      "Paradime.io",
+    icon: BronzeMedal,
+  },
+  {
+    title: "Bronze Medal",
+    description:
+      "Saptang Labs",
+    icon: BronzeMedal,
+  },
+  {
+    title: "Silver Medal",
+    description:
+      "CloudPhysician",
+    icon: BronzeMedal,
+  },
+  {
+    title: "Silver Medal",
+    description:
+      "Consensys",
+    icon: BronzeMedal,
+  },
+  {
+    title: "Gold Medal",
+    description:
+      "Grow Simplee",
+    icon: GoldMedal,
+  },
 ];
 
 const Achievments = () => {

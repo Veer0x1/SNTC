@@ -63,7 +63,7 @@
 // };
 // export default About;
 import React, { FunctionComponent } from "react";
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import { TypewriterEffect,TypewriterEffectSmooth } from "@/components/ui/text-generate-effect";
 import { TextRevealCard } from "@/components/ui/text-reveal-card";
 interface OwnProps { }
 
@@ -74,7 +74,7 @@ const About: FunctionComponent<Props> = (props) => {
     "The Science and Technology Council at IIT BHU is a student-run organization that aims to promote the understanding and application of science and technology among the IIT BHU community.";
   return(
     <>
-      <div className="flex justify-center m-4 p-4">
+      <div className="flex justify-center items-center m-4 p-4">
         <TextRevealCard text={"About Us"} revealText={words} />
       </div>
     </>
