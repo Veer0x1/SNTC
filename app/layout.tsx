@@ -1,52 +1,54 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
 import Footer from "@/components/Footer";
-import Navbar from '@/components/Navbar';
-import {FloatingNav} from "@/components/ui/floating-navbar";
+import Navbar from "@/components/Navbar";
+import { FloatingNav } from "@/components/ui/floating-navbar";
 
-
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'SNTC IIT BHU Varanasi',
-  description: 'Science and Technology Council IIT BHU Varanasi',
-}
+  title: "SNTC IIT BHU Varanasi",
+  description: "Science and Technology Council IIT BHU Varanasi",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   const navItems = [
     {
-      name:"Home",
-      link:"/",
+      name: "Home",
+      link: "/",
       // icon:
-    },{
-      name:"Clubs",
-      link:"/clubs",
+    },
+    {
+      name: "Clubs",
+      link: "/clubs",
       //icon:
     },
     {
-      name:"Events",
-      link:"/events",
+      name: "Activities",
+      link: "/activities",
       //icon:
-    },{
-      name:"Achievements",
-      link:"/#achievements",
-    },{
-      name:"About Us",
-      link:"/#aboutus",
-    }
-  ]
+    },
+    {
+      name: "Achievements",
+      link: "/#achievements",
+    },
+    {
+      name: "About Us",
+      link: "/#aboutus",
+    },
+  ];
   return (
-    <html lang="en" style={{overflowX:"hidden"}}>
+    <html lang="en" style={{ overflowX: "hidden" }}>
       <body className={inter.className}>
-      <FloatingNav navItems={navItems}/>
-      {children}
-      <Footer/>
+        <FloatingNav navItems={navItems} />
+        {children}
+        <Footer />
       </body>
     </html>
-  )
+  );
 }
