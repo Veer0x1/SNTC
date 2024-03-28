@@ -56,13 +56,13 @@ export const TextRevealCard = ({
             onMouseMove={mouseMoveHandler}
             ref={cardRef}
             className={cn(
-                "bg-[#1d1c20] border border-white/[0.08] w-[40rem] rounded-lg p-8 relative overflow-hidden",
-                className
-            )}
+                "  bg-[#100e15] border border-white/[0.08] duration-300 hover:border-white/[0.4] w-[40rem] rounded-lg p-8 relative overflow-hidden "
+              
+            )} 
         >
             {children}
 
-            <div className="h-40  relative flex items-center overflow-hidden">
+            <div className="h-40  justify-center  relative flex items-center overflow-hidden">
                 <motion.div
                     style={{
                         width: "100%",
@@ -78,7 +78,7 @@ export const TextRevealCard = ({
                             }
                     }
                     transition={isMouseOver ? { duration: 0 } : { duration: 0.4 }}
-                    className="absolute bg-[#1d1c20] z-20  will-change-transform"
+                    className="absolute bg-[#100e15] z-20  will-change-transform"
                 >
                     <p
                         style={{
