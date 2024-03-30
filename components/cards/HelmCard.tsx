@@ -25,7 +25,7 @@ const HelmCard: FunctionComponent<Props> = (props) => {
               <div
                   className="h-2.5 md:w-20 w-8 bg-gray-300 rounded-full absolute top-7 left-1/2 transform -translate-x-1/2"></div>
               <div className="card-img relative pt-8">
-                  <Image className="w-full md:h-64 object-cover rounded-lg"
+                  <Image className="md:h-64 object-cover rounded-lg"
                          src={props.image}
                          alt={props.name}
                   />

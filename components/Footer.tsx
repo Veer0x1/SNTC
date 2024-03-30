@@ -20,14 +20,14 @@ const Footer: FunctionComponent<Props> = (props) => {
     return (
         <footer className="flex justify-center px-4">
             <div className="container px-6 py-6">
-                <h1 className="text-lg font-bold text-center lg:text-2xl">
-                    Join 31,000+ other and never miss <br /> out on new tips, tutorials,
+                <h4 className="text-sm md:w-1/2 m-auto items-center font-semibold md:font-bold text-center p-2 lg:text-2xl">
+                    Join 31,000+ other and never miss  out on new tips, tutorials,
                     and more.
-                </h1>
+                </h4>
                 <div className="flex justify-center items-center m-1">
                     <div className="flex max-w-sm items-center space-x-2">
                         <Input type="email" placeholder="Email" className="md:w-[16rem]" />
-                        <Button type="submit">Subscribe</Button>
+                        <Button type="submit" className={'px-2 text-sm md:text-sm font-normal md:font-medium'}>Subscribe</Button>
                     </div>
                 </div>
 
