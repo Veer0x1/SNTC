@@ -11,7 +11,7 @@ export default function Home() {
       <div className="container px-6 py-6">
         <Hero />
         <About />
-        <Achievements></Achievements>
+        {/*<Achievements></Achievements>*/}
         <Technex />
         <Helm />
       </div>
