@@ -1,6 +1,8 @@
+'use client'
 import React, { FunctionComponent } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { toast } from "sonner"
 import { Instagram,Linkedin,Facebook,Youtube } from "lucide-react";
 import logo from "@/public/logo.svg";
 import Link from "next/link";
@@ -27,7 +29,22 @@ const Footer: FunctionComponent<Props> = (props) => {
                 <div className="flex justify-center items-center m-1">
                     <div className="flex max-w-sm items-center space-x-2">
                         <Input type="email" placeholder="Email" className="md:w-[16rem]" />
-                        <Button type="submit" className={'px-2 text-sm md:text-sm font-normal md:font-medium'}>Subscribe</Button>
+                        {/*<Button onClick={() => toast.success("Subscribed Successfully")}*/}
+                        {/* type="submit" className={'px-2 text-sm md:text-sm font-normal md:font-medium'}>Subscribe</Button>*/}
+                        <Button
+                            variant="outline"
+                            onClick={() =>
+                                toast("", {
+                                    description: "Coming soon!",
+                                    action: {
+                                        label: "Undo",
+                                        onClick: () => console.log("Undo"),
+                                    },
+                                })
+                            }
+                        >
+                           Subscribe
+                        </Button>
                     </div>
                 </div>
 
