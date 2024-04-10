@@ -7,10 +7,11 @@ const TypedText: React.FC = () => {
     const el = useRef(null)
     useEffect(()=>{
         const typed = new Typed(el.current,{
-            strings: ['', 'creators.', 'editors.'],
+            strings: ['','engineers', 'creators.', 'editors.'],
             typeSpeed: 100,
             backSpeed: 40,
             loop: true,
+            cursorChar: '.',
         })
         return ()=>{
             typed.destroy()
@@ -18,7 +19,9 @@ const TypedText: React.FC = () => {
     },[])
   return (
     // i removed the class block as it was creating issues with the curson
-    <span className={`${style.text} text-[#f1e728] h-[200px]`} ref={el}/>
+      <div>
+    <span className={`${style.cursor} text-primary text-4xl`} ref={el}/>
+      </div>
   )
 }
 

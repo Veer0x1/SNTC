@@ -1,7 +1,6 @@
-// https://codepen.io/yudizsolutions/pen/yLZaJMx
-
 //importing stylesheets
 import style from './Technex.module.css'
+import { TypewriterEffectSmooth } from "@/components/ui/text-generate-effect";
 
 //importing components
 import Box from "./Box"
@@ -10,29 +9,47 @@ import TypedText from './TypedText'
 //importing components from next
 import Link from "next/link"
 import Image from "next/image"
+import React from "react";
 
 const Technex: React.FC = () => {
-
+    const words = [
+        {
+            text: "Build",
+        },
+        {
+            text: "awesome",
+        },
+        {
+            text: "apps",
+        },
+        {
+            text: "with",
+        },
+        {
+            text: "Aceternity.",
+            className: "text-blue-500 dark:text-blue-500",
+        },
+    ];
   return (
       <section className="flex justify-center px-4">
         <div className="container px-6 py-6">
-          <main className="overflow-x-hidden m-0 bg-Technex-bg">
+          <main className="overflow-x-hidden m-0">
             {/* here in section orignally width is specified as 780px  we will test it again after media queries*/}
             <section
                 className={`${style.info_section} h-[100svh] w-screen p-0 pl-[30px] flex items-center content-end relative z-[1] select-none before:content-[''] before:rounded-ellipse1 before:opacity-40 before:blur-[162px] before:h-[35%] before:w-[55%] before:absolute before:top-[-40%] before:left-[-66%] before:translate-x-1/2 before:translate-y-1/2 before:z-[-1]`}>
               <div className={`${style.left_part} p-0 pt-[20px] overflow-hidden`}>
                 <h1 className="m-0 text-[clamp(100px,18.5vw,100px)] leading-[0.75] font-normal not-italic uppercase">
-                  <span className="flex items-center mb-8">Technex</span>
-                  {/* <span className={`${style.text} text-[#f1e728] block h-[200px]`}></span> */}
+                  <span className="flex items-center mb-8">Technex For</span>
                   <TypedText/>
+                  {/*  <TypewriterEffectSmooth words={words} />*/}
                 </h1>
-                <p className="w-[72%] mt-8  font-bold not-italic leading-[2] font-monument opacity-[0.8]">
+                <p className="mt-8 uppercase leading-[2]">
                   The annual techno-management festival of IIT (BHU) Varanasi
                 </p>
                 <Link
                     href="https://www.technex.co.in/"
                     target={'_blank'}
-                    className={`${style.book_link} mt-[40px] p-0 border-0 text-[56px] leading-[1] text-[#f1f1f1] tracking-[0.25px] uppercase font-Extenda font-light not-italic inline-flex items-center relative gap-[28px]`}
+                    className={`${style.book_link} mt-[40px] p-0 border-0 text-lg leading-[2]  tracking-[0.25px] uppercase font-light not-italic inline-flex items-center relative gap-[20px]`}
                     style={{textDecoration: "none"}}
                 >
             <span
@@ -40,9 +57,9 @@ const Technex: React.FC = () => {
               Visit our website now
             </span>
                   <span
-                      className={`${style.arrow} h-[36px] w-[36px] top-[-5px] inline-block relative overflow-hidden before:absolute before:content-[''] before:bg-[#f1e728] before:transition-all before:ease-in-out before:duration-300 before:origin-origin before:rounded-[30px] before:h-[2px] before:w-full before:top-0 before:right-0 after:absolute after:contents-[''] after:bg-[#f1e728] after:transition-all after:origin-origin after:rounded-[30px] after:ease-in-out after:duration-300 after:w-[2px] after:h-full after:top-0 after:right-0`}>
+                      className={`${style.arrow} h-[20px] w-[20px] inline-block relative overflow-hidden before:absolute before:content-[''] before:bg-primary before:transition-all before:ease-in-out before:duration-300 before:origin-origin before:rounded-[30px] before:h-[2px] before:w-full before:top-0 before:right-0 after:absolute after:contents-[''] after:bg-primary after:transition-all after:origin-origin after:rounded-[30px] after:ease-in-out after:duration-300 after:w-[2px] after:h-full after:top-0 after:right-0`}>
               <span
-                  className="bg-[#f1e728] h-[2px] w-full inline-block top-0 left-0 absolute rounded-[30px] origin-right-top transition-all ease-in-out duration-300 rotate-[-45deg] translate-x-[-3px] translate-y-[-1px] before:absolute before:bg-[#f1e728] before:content-[''] before:h-full before:w-[15px] before:left-[-15px] before:top-0"></span>
+                  className="bg-primary h-[2px] w-full inline-block top-0 left-0 absolute rounded-[30px] origin-right-top transition-all ease-in-out duration-300 rotate-[-45deg] translate-x-[-3px] translate-y-[-1px] before:absolute before:bg-primary before:content-[''] before:h-full before:w-[15px] before:left-[-15px] before:top-0"></span>
             </span>
                 </Link>
               </div>

@@ -10,7 +10,9 @@
 .book_link:hover .arrow::after {
     height: 65%;
   }
-
+.cursor{
+  line-height: 1!important;
+}
   @media screen and (min-width: 1500px) {
     .info_section {
       padding-left: 120px;
