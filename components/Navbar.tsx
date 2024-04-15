@@ -2,7 +2,7 @@
 
 import React from "react";
 import Logo from "@/public/logo.svg";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { Button } from "@/components/ui/button";
 
 

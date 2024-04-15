@@ -8,7 +8,7 @@ import BgImg from "./BgImg"
 import TypedText from './TypedText'
 //importing components from next
 import Link from "next/link"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import React from "react";
 
 const Technex: React.FC = () => {

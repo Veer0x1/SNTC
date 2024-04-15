@@ -6,7 +6,7 @@ import { toast } from "sonner"
 import { Instagram,Linkedin,Facebook,Youtube } from "lucide-react";
 import logo from "@/public/logo.svg";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const links = [
     { icon: <Instagram color="#cd486b" />, href: "https://www.instagram.com/sntc.iitbhu/?hl=en" },

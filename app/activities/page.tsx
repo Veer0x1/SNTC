@@ -1,6 +1,6 @@
 "use client";
 import React, { FunctionComponent } from 'react';
-import Image, {StaticImageData} from 'next/image';
+import Image, {StaticImageData} from "next/legacy/image";
 import { BackgroundBeams} from "@/components/ui/background-beams";
 import {TypewriterEffectSmooth} from "@/components/ui/text-generate-effect";
 import { BentoGrid,BentoGridItem } from "@/components/ui/bento-grid";
@@ -105,7 +105,7 @@ interface BannerProps {
 }
 const Banner:React.FC<BannerProps> = ({imgPath})=>(
     <div className="flex flex-1 min-h-[6rem] rounded-xl relative">
-        <Image src={imgPath} alt="Banner" fill={true} objectFit={'cover'} className={'bg-cover'} />
+        <Image src={imgPath} alt="Banner"  objectFit={'cover'} className={'bg-cover'} />
     </div>
 )
 const workshops = [
@@ -119,25 +119,25 @@ const workshops = [
         title: "Roadmap to Consumer Products",
         description: "Discover the beauty of thoughtful and functional design.",
         header: <Banner imgPath={Nitesh_Sinha}/>,
-        icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+        icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
     },
     {
         title: "Dynamic Programming",
         description: "Workshop on Dynamic Programming, exploring its applications in solving complex problems with efficiency and elegance. Presented by CPG",
         header: <Banner imgPath={DP}/>,
-        icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+        icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
     },
     {
         title: "Introduction to API Development",
         description: "Workshop on API Development, exploring its applications.",
         header: <Banner imgPath={IntroToApi}/>,
-        icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+        icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
     },
     {
         title: "Intro to Game Design",
         description: "Workshop on Game Design, using Unity and Blender.",
         header: <Banner imgPath={IntroToGameDesign}/>,
-        icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+        icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
     }
 ]
 const items = [

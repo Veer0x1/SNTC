@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
-import {StaticImageData} from "next/image";
-import Image from 'next/image';
+import {StaticImageData} from "next/legacy/image";
+import Image from "next/legacy/image";
 import {
     Card,
     CardContent,
