@@ -1,17 +1,9 @@
-import Navbar from "@/components/Navbar";
 import Technex from "@/components/Technex/Technex";
 import About from "@/components/About/About";
 import Achievements from "@/components/Achievments/Achievements";
-import Gallery from "@/components/Gallery/Gallery";
 import Helm from "@/components/Helm";
 import Hero from "@/components/Hero";
 import React from "react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 export default function Home() {
@@ -28,12 +20,10 @@ export default function Home() {
           <Technex />
         </div>
         <Helm />
-        <div className={'flex justify-center items-center md:-mt-8'}>
-          <Link href="/team">
-          <Button variant={'secondary'}>
-            View Team
-          </Button>
-            </Link>
+        <div className={"flex justify-center items-center md:-mt-8"}>
+          <Link href={"/team"}>
+            <Button variant={"secondary"}>View Team</Button>
+          </Link>
         </div>
       </div>
     </>
