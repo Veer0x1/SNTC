@@ -17,6 +17,7 @@
     "@lottiefiles/dotlottie-react": "^0.5.4",
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "@material-tailwind/react": "^2.1.5",
+    "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-slot": "^1.0.2",
     "@react-three/fiber": "^8.15.13",

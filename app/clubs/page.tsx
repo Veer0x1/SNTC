@@ -11,7 +11,7 @@ export default function Clubs() {
         },
         {
             text: "SNTC",
-            className: "text-yellow-400 dark:text-yellow-400",
+            className: "text-primary"
         },
     ];
   return (
