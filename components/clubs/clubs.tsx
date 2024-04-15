@@ -22,7 +22,6 @@ export function TracingBeamDemo() {
                     src={item.image}
                     alt="blog thumbnail"
                     style={{ objectFit: "contain" }}
-                    fill={true}
                     objectFit="contain"
                   />
                 </div>

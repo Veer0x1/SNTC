@@ -40,10 +40,12 @@ const Hero: FunctionComponent<Props> = (props) => {
         </div>
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
           <Player
-            src="https://lottie.host/5d539f9d-1902-41d8-9e55-bd393c9b22ed/yFRQAFWnhX.json"
+            src="https://lottie.host/1bb5a965-2cfd-4b50-82a3-8ddc9d2b646d/jAabybE1tH.json"
             loop
+            speed={0.7}
             autoplay
             style={{ height: "300px", width: "300px" }}
+            className={'rounded-lg'}
           ></Player>
         </div>
       </div>

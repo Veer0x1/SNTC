@@ -159,7 +159,7 @@ const Technex: React.FC = () => {
                 <Image
                   src="https://www.yudiz.com/codepen/photography-banner/dash-circle.svg"
                   alt="dash-circle"
-                  fill={true}
+                  layout={"fill"}
                   className="h-full w-full object-cover object-center-center animate-circle-rotate"
                 />
               </div>
