@@ -13,7 +13,7 @@ const Hero: FunctionComponent<Props> = (props) => {
   return (
 
       <section className="flex justify-center px-4">
-          <div className="flex p-36">
+          <div className="flex md:py-36 py-24">
               <div className="mr-auto place-self-center lg:col-span-7">
                   <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Science and Technology Council </h1>
                   <p className="max-w-2xl mb-6 font-light  lg:mb-8 md:text-lg lg:text-xl text-muted-foreground"> The official technical body of IIT (BHU) Varanasi</p>

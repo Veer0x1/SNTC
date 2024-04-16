@@ -20,32 +20,12 @@ export const FloatingNav = ({
   }[];
   className?: string;
 }) => {
-  const { scrollYProgress } = useScroll();
-
-  const [visible, setVisible] = useState(false);
-
-  // useMotionValueEvent(scrollYProgress, "change", (current) => {
-  //   // Check if current is not undefined and is a number
-  //   if (typeof current === "number") {
-  //     let direction = current! - scrollYProgress.getPrevious()!;
-
-  //     if (scrollYProgress.get() < 0.05) {
-  //       setVisible(false);
-  //     } else {
-  //       if (direction < 0) {
-  //         setVisible(true);
-  //       } else {
-  //         setVisible(false);
-  //       }
-  //     }
-  //   }
-  // });
-
   return (
     <AnimatePresence mode="wait">
+      <div className="flex flex-col items-center">
       <motion.div
         className={cn(
-          "flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-white/[0.2] rounded-full bg-black shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] p-8 py-4 items-center justify-center space-x-4",
+          "flex md:max-w-fit fixed top-6 border border-white/[0.2] rounded-full bg-black shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] p-8 py-4 items-center justify-center md:space-x-4 space-x-2",
           className,
         )}
       >
@@ -54,18 +34,14 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative items-center flex space-x-1  hover:text-gray-600 transform transition ease-linear duration-100",
+              "items-center flex md:space-x-1 text-white md:text-sm text-xs hover:text-gray-600",
             )}
           >
-            <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm">{navItem.name}</span>
+            {navItem.name}
           </Link>
         ))}
-        {/* <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
-          <span>Login</span>
-          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
-        </button> */}
       </motion.div>
+      </div>
     </AnimatePresence>
   );
 };
