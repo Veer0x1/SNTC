@@ -1,10 +1,10 @@
+// 'use client';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { Toaster } from "@/components/ui/sonner"
-import styled from 'styled-components';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -51,7 +51,7 @@ export default function RootLayout({
         </div>
         {children}
         <Footer />
-        <Toaster/>
+        <Toaster />
       </body>
     </html>
   );

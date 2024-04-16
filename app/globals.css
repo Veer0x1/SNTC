@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
-/*Temporary fonts for technex page testing*/ 
+
+/*Temporary fonts for technex page testing*/
 @font-face {
   font-family: "monument_extendedregular";
   src: url("https://www.yudiz.com/codepen/photography-banner/monumentextended-regular.woff2")
@@ -32,8 +32,7 @@
 
 @layer base {
   :root {
-
-   /* About section variables  ------------------------------------------------------------------------------ */
+    /* About section variables  ------------------------------------------------------------------------------ */
     --bg: hsl(0 0% 2%);
     --color: hsl(0 0% 100% / 0.1);
     --underline-width: 1lh;
@@ -45,11 +44,6 @@
     --fill: hsl(0 0% 50%);
 
     /* ------------------------------------------------------------------------------------------------------ */
-
-
-
-
-
 
     /*--background: 20 14.3% 4.1%;*/
     /*--foreground: 60 9.1% 97.8%;*/
@@ -92,20 +86,19 @@
     --input: 240 3.7% 15.9%;
     --ring: 142.4 71.8% 29.2%;
   }
- 
 }
- 
+
 @layer base {
   * {
     @apply border-border;
     @apply box-border;
   }
   *::before,
-  *::after{
+  *::after {
     @apply box-border;
   }
   body {
     @apply bg-background text-foreground;
   }
-
 }
+

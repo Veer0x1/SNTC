@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 // import { calsans } from "@/fonts/calsans";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
@@ -15,14 +15,14 @@ export function TracingBeamDemo() {
               {item.badge}
             </h2>
             <p className={twMerge("text-xl mb-4")}>{item.title}</p>
-            <div className="text-sm  prose prose-sm dark:prose-invert flex justify-center flex-col items-center">
+            <div className="text-sm text-muted-foreground p-4 prose prose-sm dark:prose-invert flex justify-center flex-col items-center">
               {item?.image && (
-                <div className=" w-full flex items-center justify-center relative h-80 overflow-hidden rounded-xl mix-blend-difference">
+                <div className="w-full flex m-4 items-center justify-center relative h-80 overflow-hidden rounded-xl mix-blend-difference">
                   <Image
                     src={item.image}
                     alt="blog thumbnail"
                     style={{ objectFit: "contain" }}
-                    fill
+                    objectFit="contain"
                   />
                 </div>
               )}
