@@ -1,8 +1,5 @@
 import React, { FunctionComponent } from "react";
 import Helm from "@/components/Helm";
-import AdityaSinghSurana from "@/public/Helm/Aditya_surana.jpeg";
-import AdityaKumarSingh from "@/public/Helm/Aditya_Kumar_Singh.jpeg";
-import TanishaSingh from "@/public/Helm/Tanisha_singh.jpeg";
 import Lakshya from "@/public/Helm/Lakshya.jpeg";
 import Manish from "@/public/Helm/manish.jpeg";
 import Bhavna from "@/public/Helm/bhavna.jpeg";
@@ -13,17 +10,17 @@ interface OwnProps {}
 type Props = OwnProps;
 const helmData = [
   {
-    name: "Aditya Singh Surana",
+    name: "Lakshya Singh",
     position: "Joint General Secretary",
     image: Lakshya,
   },
   {
-    name: "Aditya Kumar Singh",
+    name: "Manish Rai",
     position: "General Secretary",
     image: Manish,
   },
   {
-    name: "Tanisha Singh",
+    name: "Priti Sarbha",
     position: "Joint General Secretary",
     image: Bhavna,
   },
@@ -31,9 +28,8 @@ const helmData = [
 const page: FunctionComponent<Props> = (props) => {
   return (
     <div className="container px-6 py-6">
-      <div className={'mt-8'}>
-
-      <Helm />
+      <div className={"mt-8"}>
+        <Helm />
       </div>
       <section className="flex justify-center px-4">
         <div className="md:container md:px-6 md:py-6">

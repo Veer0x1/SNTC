@@ -20,7 +20,7 @@ export function TracingBeamDemo() {
                 <div className="w-full flex m-4 items-center justify-center relative h-80 overflow-hidden rounded-xl mix-blend-difference">
                   <Image
                     src={item.image}
-                    layout={'fill'}
+                    layout={"fill"}
                     alt="blog thumbnail"
                     style={{ objectFit: "contain" }}
                     objectFit="contain"
@@ -306,7 +306,7 @@ const dummyContent = [
       </>
     ),
     badge: "",
-    image: "/clubs/AMC/Logo.png",
+    image: "/clubs/AMC/LOGO.png",
   },
   {
     title: "Science Of Automotive Engineering (SAE)",

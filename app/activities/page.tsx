@@ -53,7 +53,7 @@ const page: FunctionComponent<Props> = (props) => {
 
   return (
     <div className={"container px-6 py-6"}>
-      <div className="flex justify-center align-middle sm:m-4 sm:p-4">
+      <div className="flex justify-center align-middle sm:mt-20 mt-32 sm:m-4 sm:p-4">
         <TypewriterEffectSmooth words={words} />
       </div>
       <section className={""}>
