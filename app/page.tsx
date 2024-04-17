@@ -14,7 +14,7 @@ export default function Home() {
         <About />
         <Achievements />
         <div>
-          <h3 className="md:w-1/2 m-auto items-center font-semibold text-6xl md:font-bold text-center p-2 ">
+          <h3 className="md:w-1/2 mb-4 m-auto items-center font-semibold text-3xl mt-8 sm:mt-0 sm:text-6xl md:font-bold text-center p-2 ">
             Annual Techno Fest
           </h3>
           <Technex />

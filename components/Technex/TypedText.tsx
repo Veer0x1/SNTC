@@ -20,7 +20,7 @@ const TypedText: React.FC = () => {
   return (
     // i removed the class block as it was creating issues with the curson
     <div>
-      <span className={`${style.cursor} text-primary text-4xl`} ref={el} />
+      <span className={`${style.cursor} text-primary sm:text-4xl text-lg`} ref={el} />
     </div>
   );
 };

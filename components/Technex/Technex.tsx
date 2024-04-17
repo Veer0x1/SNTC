@@ -9,63 +9,34 @@ import TypedText from "./TypedText";
 import Link from "next/link";
 import Image from "next/legacy/image";
 import React from "react";
+import { Button } from "../ui/button";
+
+
 
 const Technex: React.FC = () => {
-  const words = [
-    {
-      text: "Build",
-    },
-    {
-      text: "awesome",
-    },
-    {
-      text: "apps",
-    },
-    {
-      text: "with",
-    },
-    {
-      text: "Aceternity.",
-      className: "text-blue-500 dark:text-blue-500",
-    },
-  ];
   return (
     <section className="flex justify-center px-4">
-      <div className="container px-6 py-6">
-        <main className="overflow-x-hidden m-0">
-          {/* here in section orignally width is specified as 780px  we will test it again after media queries*/}
+      <div className="m-auto w-full sm:px-6 sm:py-6">
+        <main className="overflow-hidden">
           <section
-            className={`${style.info_section} h-[100svh] w-screen p-0 pl-[30px] flex items-center content-end relative z-[1] select-none before:content-[''] before:rounded-ellipse1 before:opacity-40 before:blur-[162px] before:h-[35%] before:w-[55%] before:absolute before:top-[-40%] before:left-[-66%] before:translate-x-1/2 before:translate-y-1/2 before:z-[-1]`}
+            className={`${style.info_section}  w-screen p-0 pl-[30px] flex items-center content-end relative z-[1] select-none before:content-[''] before:rounded-ellipse1 before:opacity-40 before:blur-[162px] before:h-[35%] before:w-[55%] before:absolute before:top-[-40%] before:left-[-66%] before:translate-x-1/2 before:translate-y-1/2 before:z-[-1]`}
           >
-            <div className={`${style.left_part} p-0 pt-[20px] overflow-hidden`}>
-              <h1 className="m-0 text-[clamp(100px,18.5vw,100px)] leading-[0.75] font-normal not-italic uppercase">
-                <span className="flex items-center mb-8">Technex For</span>
+            <div className={`${style.left_part} pt-[20px] overflow-hidden`}>
+              <h1 className="text-sm sm:text-4xl leading-[0.75] font-normal not-italic uppercase">
+                <span className="flex items-center mb-4 sm:mb-8">Technex For</span>
                 <TypedText />
-                {/*  <TypewriterEffectSmooth words={words} />*/}
               </h1>
-              <p className="mt-8 uppercase leading-[2]">
+              <p className="mt-8 uppercase text-muted-foreground">
                 The annual techno-management festival of IIT (BHU) Varanasi
               </p>
-              <Link
-                href="https://www.technex.co.in/"
-                target={"_blank"}
-                className={`${style.book_link} mt-[40px] p-0 border-0 text-lg leading-[2]  tracking-[0.25px] uppercase font-light not-italic inline-flex items-center relative gap-[20px]`}
-                style={{ textDecoration: "none" }}
-              >
-                <span
-                  className={`${style.linktext} relative overflow-hidden inline-block before:content-[''] before:absolute before:left-0 before:bottom-[6px] before:w-full before:h-[3px] before:bg-white before:scale-x-100 before:transition-translate before:duration-300 before:ease-in-out before:origin-origin`}
-                >
-                  Visit our website now
-                </span>
-                <span
-                  className={`${style.arrow} h-[20px] w-[20px] inline-block relative overflow-hidden before:absolute before:content-[''] before:bg-primary before:transition-all before:ease-in-out before:duration-300 before:origin-origin before:rounded-[30px] before:h-[2px] before:w-full before:top-0 before:right-0 after:absolute after:contents-[''] after:bg-primary after:transition-all after:origin-origin after:rounded-[30px] after:ease-in-out after:duration-300 after:w-[2px] after:h-full after:top-0 after:right-0`}
-                >
-                  <span className="bg-primary h-[2px] w-full inline-block top-0 left-0 absolute rounded-[30px] origin-right-top transition-all ease-in-out duration-300 rotate-[-45deg] translate-x-[-3px] translate-y-[-1px] before:absolute before:bg-primary before:content-[''] before:h-full before:w-[15px] before:left-[-15px] before:top-0"></span>
-                </span>
+              <Link href={'https://www.technex.co.in/'} target={"_blank"} className={'mt-4'}>
+                <Button className={'text-xs h-8 mt-4'}>
+                    Visit our website now
+                </Button>
               </Link>
             </div>
             <div
-              className={`${style.right_part} bg-transparent h-[588px] w-[588px] m-0 ml-auto mr-[-14px] block relative z-[1] shrink-0 before:content-[''] before:rounded-ellipse1 before:opacity-40 before:bg-[#f1e728] before:blur-[112px] before:h-[35%] before:w-[55%] before:absolute before:top-1/2 before:right-1/3 before:translate-x-1/2 before:translate-y-[-50%] before:z-[-1]`}
+              className={`${style.right_part} bg-transparent h-[588px] w-[588px] m-0 ml-auto mr-[-14px] block relative z-[1] shrink-0 before:content-[''] before:rounded-ellipse1 before:opacity-40 before:bg-primary before:blur-[112px] before:h-[35%] before:w-[55%] before:absolute before:top-1/2 before:right-1/3 before:translate-x-1/2 before:translate-y-[-50%] before:z-[-1]`}
             >
               <div
                 className={`${style.bg_line} absolute top-0 right-0 w-1/2 h-[85px] z-[-1] overflow-hidden flex whitespace-nowrap `}
@@ -99,7 +70,7 @@ const Technex: React.FC = () => {
                 </Box>
                 <Box className="left-2/3 top-0 animate-box-3">
                   <span className="absolute opacity-80 z-[5] block left-[-10px] bottom-[2px]">
-                    Under Water
+                    Robowars
                   </span>
                 </Box>
                 <Box className="left-0 top-1/3 animate-box-4">
@@ -130,28 +101,6 @@ const Technex: React.FC = () => {
                     alt="Videography"
                   />
                 </Box>
-              </div>
-              <div
-                className={`${style.bg_circle_h_line} bottom-[42px] left-[-68px] z-[1] w-[181px] h-[111px] relative`}
-              >
-                <img
-                  src="https://www.yudiz.com/codepen/photography-banner/circle-ring.svg"
-                  alt="Horizontal-circle"
-                  // fill={true}
-                  className="absolute w-full h-auto max-w-full left-0 top-0 animate-top-ring-move"
-                />
-                <img
-                  src="https://www.yudiz.com/codepen/photography-banner/circle-ring.svg"
-                  alt="Horizontal-circle"
-                  // fill={true}
-                  className="absolute w-full h-auto max-w-full left-0 top-1/2 translate-y-[-50%] "
-                />
-                <img
-                  src="https://www.yudiz.com/codepen/photography-banner/circle-ring.svg"
-                  alt="Horizontal-circle"
-                  // fill={true}
-                  className="absolute w-full h-auto max-w-full left-0 bottom-0 animate-bottom-ring-move"
-                />
               </div>
               <div
                 className={`${style.bg_dash_circle} absolute bottom-[-35px] right-[-13px] z-[-1] w-[180px] aspect-square`}

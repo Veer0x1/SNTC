@@ -19,7 +19,7 @@ type AchievementCardProps = {
 
 const AchievementCard: React.FC<AchievementCardProps> = (props) => {
   return (
-    <Card className={"w-[300px] h-[250px]"}>
+    <Card className={"w-[300px] h-[250px] pointer-events-none"}>
       <CardHeader>
         <CardTitle
           className={
@@ -33,6 +33,7 @@ const AchievementCard: React.FC<AchievementCardProps> = (props) => {
           loop
           src={props.animation}
           style={{ height: "100px", width: "100px" }}
+          className={'pointer-events-none'}
         ></Player>
       </CardHeader>
       <CardContent>
