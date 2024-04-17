@@ -31,7 +31,7 @@ const HelmCard: FunctionComponent<Props> = (props) => {
           />
         </div>
         <div className="card-content m-4">
-          <h2 className="uppercase text-center text-sm text-primary tracking-wider mb-2 md:font-semibold">
+          <h2 className="uppercase text-center text-xs sm:text-sm text-primary tracking-wider mb-2 md:font-semibold">
             {props.name}
           </h2>
           <p className="md:text-xs text-[0.6rem] tracking-wider text-center text-accent-foreground">

@@ -39,14 +39,14 @@ export default function RootLayout({
       link: "/#achievements",
     },
     {
-      name: "About Us",
-      link: "/#aboutus",
+      name: "Team",
+      link: "/team",
     },
   ];
   return (
     <html lang="en" style={{ overflowX: "hidden" }}>
       <body className={inter.className}>
-      <div>
+      <div className={'p-2 ml-4 mr-4'}>
           <FloatingNav navItems={navItems} />
         </div>
         {children}

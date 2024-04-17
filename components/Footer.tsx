@@ -6,7 +6,7 @@ import { toast } from "sonner";
 import { Instagram, Linkedin, Facebook, Youtube } from "lucide-react";
 import logo from "@/public/logo.svg";
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 const links = [
   {
@@ -41,8 +41,6 @@ const Footer: FunctionComponent<Props> = (props) => {
         <div className="flex justify-center items-center m-1">
           <div className="flex max-w-sm items-center space-x-2">
             <Input type="email" placeholder="Email" className="md:w-[16rem]" />
-            {/*<Button onClick={() => toast.success("Subscribed Successfully")}*/}
-            {/* type="submit" className={'px-2 text-sm md:text-sm font-normal md:font-medium'}>Subscribe</Button>*/}
             <Button
               variant="outline"
               onClick={() =>
@@ -59,9 +57,7 @@ const Footer: FunctionComponent<Props> = (props) => {
             </Button>
           </div>
         </div>
-
         <hr className="h-px bg-primary border-none my-7 dark:bg-gray-700" />
-
         <div className="flex flex-col items-center justify-between md:flex-row">
           <a href="#">
             <Image

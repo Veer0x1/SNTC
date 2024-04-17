@@ -38,14 +38,14 @@ const Hero: FunctionComponent<Props> = (props) => {
             Learn More
           </Button>
         </div>
-        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <div className="hidden lg:mt-0 lg:rounded-2xl lg:col-span-5 lg:flex">
           <Player
             src="https://lottie.host/1bb5a965-2cfd-4b50-82a3-8ddc9d2b646d/jAabybE1tH.json"
             loop
             speed={0.7}
             autoplay
             style={{ height: "300px", width: "300px" }}
-            className={'rounded-lg'}
+            className={'rounded-lg lg:rounded-2xl'}
           ></Player>
         </div>
       </div>

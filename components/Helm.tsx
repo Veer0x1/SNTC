@@ -30,7 +30,7 @@ const Helm: FunctionComponent<Props> = (props) => {
     <section className="flex justify-center px-4">
       <div className="md:container md:px-6 md:py-6">
         <header className="text-center m-4 mb-8">
-          <h2 className="font-semibold text-6xl">Current Helm</h2>
+          <h2 className="font-semibold text-4xl sm:text-6xl">Current Helm</h2>
         </header>
         <div className={"md:flex justify-center items-center"}>
           {helmData.map((item, index) => {
