@@ -29,31 +29,33 @@ const page: FunctionComponent<Props> = (props) => {
   const words = [
     {
       text: "Activies",
+      className: "text-3xl sm:text-6xl",
     },
     {
       text: "under",
+      className: "text-3xl sm:text-6xl",
     },
     {
       text: "SNTC",
-      className: "text-primary",
+      className: "text-primary text-3xl sm:text-6xl",
     },
   ];
   const eventsHeading = [
     {
       text: "Events",
-      className: "text-primary",
+      className: "text-primary text-3xl sm:text-6xl",
     },
   ];
   const workshopsHeading = [
     {
       text: "Workshops",
-      className: "text-primary",
+      className: "text-primary text-3xl sm:text-6xl",
     },
   ];
 
   return (
     <div className={"container px-6 py-6"}>
-      <div className="flex justify-center align-middle sm:mt-20 mt-32 sm:m-4 sm:p-4">
+      <div className="flex justify-center align-middle sm:mt-20 mt-12 sm:m-4 sm:p-4">
         <TypewriterEffectSmooth words={words} />
       </div>
       <section className={""}>

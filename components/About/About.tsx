@@ -16,7 +16,7 @@ const About: FunctionComponent<Props> = (props) => {
         <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
           <div className="font-light sm:text-lg text-center sm:text-left">
             <h2 className="mb-4 text-2xl sm:text-4xl font-extrabold">
-              Igniting Innovation at IIT BHU
+              Igniting Innovation at <br /> IIT BHU (Varanasi)
             </h2>
             <p className="mb-4 sm:text-lg text-md text-muted-foreground">
               The Science and Technology Council, nestled within the prestigious
