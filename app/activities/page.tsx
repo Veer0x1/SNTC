@@ -9,7 +9,7 @@ import casebook from "@/public/clubs/Biz/Events/Casebook.jpeg";
 import stockmarket from "@/public/clubs/Biz/Workshops/StockMarket.jpeg";
 import Nitesh_Sinha from "@/public/clubs/Biz/Workshops/Nitesh_Sinha.jpeg";
 import DP from "@/public/clubs/COPS/Workshops/DP.jpeg";
-import IntroToApi from "@/public/clubs/COPS/Workshops/IntroToApi.png";
+import IntroToApi from "@/public/clubs/COPS/Workshops/IntroToAPI.png";
 import IntroToGameDesign from "@/public/clubs/COPS/Workshops/IntroToGameDev.png";
 import CSOC from "@/public/clubs/COPS/Workshops/CSOC.png";
 import {
