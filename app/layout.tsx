@@ -4,7 +4,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import { Toaster } from "@/components/ui/sonner";
+import { Toaster } from "@/components/ui/sonner"
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -45,7 +46,9 @@ export default function RootLayout({
   return (
     <html lang="en" style={{ overflowX: "hidden" }}>
       <body className={inter.className}>
-        <FloatingNav navItems={navItems} />
+      <div>
+          <FloatingNav navItems={navItems} />
+        </div>
         {children}
         <Footer />
         <Toaster />
