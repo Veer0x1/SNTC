@@ -22,7 +22,7 @@ const Hero: FunctionComponent<Props> = (props) => {
           </p>
           <Link href={"/#aboutus"}>
             <Button variant={"default"} className={"text-center"}>
-              About Us{" "}
+              Get Started{" "}
               <svg
                 className="w-5 h-5 ml-2 -mr-1"
                 fill="currentColor"
@@ -39,7 +39,7 @@ const Hero: FunctionComponent<Props> = (props) => {
           </Link>
           <Link href={"/clubs"}>
             <Button variant={"secondary"} className={"m-2"}>
-              Clubs
+              Learn More{" "}
             </Button>
           </Link>
         </div>

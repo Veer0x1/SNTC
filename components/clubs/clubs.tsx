@@ -32,7 +32,7 @@ export function TracingBeamDemo(props: TracingBeamDemoProps) {
             <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
               {item.badge}
             </h2>
-            <p className={twMerge("text-xl mb-4")}>{item.title}</p>
+            <p className={twMerge("sm:text-4xl text-xl mb-4")}>{item.title}</p>
             <div className="text-sm text-muted-foreground p-4 prose prose-sm dark:prose-invert flex justify-center flex-col items-center">
               {item?.image && (
                 <div className="w-full flex m-4 items-center justify-center relative h-80 overflow-hidden rounded-xl mix-blend-difference">

@@ -177,72 +177,59 @@ const clubsData = [
     image: "/clubs/Astro/astro-logo-white.png",
   },
   {
-    title: "180 Degrees Consulting",
+    title: "Business Club",
     people: [
       {
         id: 1,
-        name: "John Doe",
-        designation: "Software Engineer",
-        image:
-          "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
+        name: "Dnyanada Deshpande",
+        designation: "Joint Secretary",
+        image: "/clubs/Bizz/DnyanadaDeshpande.jpg",
       },
       {
         id: 2,
-        name: "Robert Johnson",
-        designation: "Product Manager",
-        image:
-          "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        name: "Prateek Ray",
+        designation: "Joint Secretary",
+        image: "/clubs/Biz/PrateekRay.jpg",
       },
       {
         id: 3,
-        name: "Jane Smith",
-        designation: "Data Scientist",
-        image:
-          "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        name: "Vedant Bhoruka",
+        designation: "Secretary",
+        image: "/clubs/Biz/VedantBhoruka.jpg",
       },
     ],
     description: (
       <>
         <p>
-          180 Degrees Consulting at the Indian Institute of Technology (BHU),
-          Varanasi, is a dynamic organization dedicated to making a difference
-          through consulting projects. Our mission is to leverage the skills and
-          talents of our members to provide high-impact consulting services to
-          non-profits, social enterprises, and community organizations. Through
-          hands-on projects, workshops, and mentorship programs, we aim to
-          empower our members with real-world consulting experience and
-          leadership opportunities. Whether you&apos;re passionate about social
-          impact, business strategy, or project management, 180 Degrees
-          Consulting offers a platform to apply your skills, drive positive
-          change, and make a meaningful impact in the world. Join us to become
-          part of a global network of changemakers and contribute to building a
-          better future. Connect with us on social media and email to get
-          involved and unleash your potential in consulting for social good!
+          Empower yourself with the knowledge and skills to succeed in the
+          business world through the Business Club at IIT BHU. Our club is
+          dedicated to promoting an understanding of the business landscape and
+          providing students with the tools necessary to succeed in the
+          competitive and rapidly-changing world of business. From guest
+          lectures by industry leaders to hands-on projects and workshops,
+          students can gain a well-rounded understanding of the business world
+          and develop the skills necessary to thrive in the workplace.Join us in
+          our mission to equip the next generation of business leaders with the
+          knowledge and skills necessary to succeed in the global marketplace.
         </p>
       </>
     ),
     badge: "",
-    image: "/clubs/180DC/180DCLogo.png",
+    image: "/clubs/Biz/bizzLogo.svg",
   },
   {
     title: "Club Of Sustainability and Innovation",
     people: [
       {
         id: 1,
-        name: "Pragya Singh",
-        designation: "Secretary",
-        image: "/clubs/CSI/PragyaSingh_CSI_Secretary.jpg",
-      },
-      {
-        id: 2,
         name: "Reethu Jahnavi",
         designation: "Joint Secretary",
         image: "/clubs/CSI/Reethu Jahnavi_CSI_Jt_Secretary.jpeg",
       },
       {
-        id: 3,
+        id: 2,
         name: "Aditya Aryaman",
-        designation: "Joint Secretary",
+        designation: "Secretary",
         image: "/clubs/CSI/Aditya_Aryaman_Das_CSI-Jt_Secretary.png",
       },
     ],
