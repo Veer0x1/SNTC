@@ -36,10 +36,12 @@ const AchievementCard: React.FC<AchievementCardProps> = (props) => {
         ></Player>
       </CardHeader>
       <CardContent>
-        <CardDescription className={"text-center sm:text-sm text-[10px]"}>
+        <CardDescription className={"text-center sm:text-sm text-[12px]"}>
           {props.description}
         </CardDescription>
-        <CardDescription className={"text-center sm:text-xs text-[8px] sm:p-2"}>
+        <CardDescription
+          className={"text-center sm:text-xs text-[10px] sm:p-2"}
+        >
           {props.info}
         </CardDescription>
       </CardContent>

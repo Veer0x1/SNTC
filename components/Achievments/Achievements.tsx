@@ -54,10 +54,10 @@ const AchievmentsData = [
 
 const Achievements = () => {
   return (
-    <section id="achievements" className="flex justify-center px-4">
-      <div className="container px-6 py-6">
-        <header className="text-center m-4 mb-8">
-          <h2 className="font-semibold md:text-6xl">Achievements</h2>
+    <section id="achievements" className="flex justify-center sm:px-4">
+      <div className="container sm:px-6 sm:py-6">
+        <header className="text-center mb-8">
+          <h2 className="font-semibold text-3xl sm:text-6xl">Achievements</h2>
         </header>
         <div className="place-items-center flex flex-wrap flex-row content-center justify-center items-center my-0 mx-auto relative touch-none gap-[32px]">
           {AchievmentsData.map((data, index) => (

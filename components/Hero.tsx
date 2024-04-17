@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { FunctionComponent } from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { Button } from "@/components/ui/button";
@@ -19,24 +20,28 @@ const Hero: FunctionComponent<Props> = (props) => {
             {" "}
             The official technical body of IIT (BHU) Varanasi
           </p>
-          <Button variant={"default"} className={"text-center"}>
-            Get Started{" "}
-            <svg
-              className="w-5 h-5 ml-2 -mr-1"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-          </Button>
-          <Button variant={"ghost"} className={"m-2"}>
-            Learn More
-          </Button>
+          <Link href={"/#aboutus"}>
+            <Button variant={"default"} className={"text-center"}>
+              About Us{" "}
+              <svg
+                className="w-5 h-5 ml-2 -mr-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+            </Button>
+          </Link>
+          <Link href={"/clubs"}>
+            <Button variant={"secondary"} className={"m-2"}>
+              Clubs
+            </Button>
+          </Link>
         </div>
         <div className="hidden lg:mt-0 lg:rounded-2xl lg:col-span-5 lg:flex">
           <Player
@@ -45,7 +50,7 @@ const Hero: FunctionComponent<Props> = (props) => {
             speed={0.7}
             autoplay
             style={{ height: "300px", width: "300px" }}
-            className={'rounded-lg lg:rounded-2xl'}
+            className={"rounded-lg lg:rounded-2xl"}
           ></Player>
         </div>
       </div>
