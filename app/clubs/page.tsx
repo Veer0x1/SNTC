@@ -153,7 +153,7 @@ const clubsData = [
         id: 3,
         name: "Yuvraj Singh",
         designation: "Joint Secretary",
-        image: "/clubs/Astro/Yuvraj Singh_Joint Secretary.jpg",
+        image: "/clubs/Astro/yuvraj Singh_Joint Secretary.jpg",
       },
     ],
     description: (
@@ -183,19 +183,19 @@ const clubsData = [
         id: 1,
         name: "Dnyanada Deshpande",
         designation: "Joint Secretary",
-        image: "/clubs/Bizz/DnyanadaDeshpande.jpg",
+        image: "/clubs/Biz/Helm/Dnyanada_Deshpande.jpg",
       },
       {
         id: 2,
         name: "Prateek Ray",
         designation: "Joint Secretary",
-        image: "/clubs/Biz/PrateekRay.jpg",
+        image: "/clubs/Biz/Helm/PrateekRay.jpg",
       },
       {
         id: 3,
         name: "Vedant Bhoruka",
         designation: "Secretary",
-        image: "/clubs/Biz/VedantBhoruka.jpg",
+        image: "/clubs/Biz/Helm/VedantBhoruka.jpg",
       },
     ],
     description: (

@@ -68,7 +68,15 @@ const Footer: FunctionComponent<Props> = (props) => {
               alt="Science and technology council IIT BHU Varanasi logo"
             />
           </a>
-
+          <div className="mt-4 mb-4">
+            <Link
+              href="mailto:gensec.sntc@iitbhu.ac.in"
+              className="text-muted-foreground text-sm sm:text-lg hover:text-secondary-foreground"
+            >
+              {" "}
+              Email: gensec.sntc@iitbhu.ac.in
+            </Link>
+          </div>
           <div className="flex mt-4 md:m-0">
             <div className="-mx-4 flex justify-between items-center">
               {links.map((link, index) => (
@@ -90,4 +98,3 @@ const Footer: FunctionComponent<Props> = (props) => {
 };
 
 export default Footer;
-
