@@ -1,14 +1,14 @@
 import React, { FunctionComponent } from "react";
 import HelmCard from "@/components/cards/HelmCard";
-import AdityaKumarSingh from "@/public/Helm/Aditya_Kumar_Singh.jpeg";
-import AdityaSinghSurana from "@/public/Helm/Aditya_surana.jpeg";
-import TanishaSingh from "@/public/Helm/Tanisha_singh.jpeg";
+import AdityaKumarSingh from "@/public/Helm/Aditya_Kumar_Singh.JPG";
+import AdityaSurana from "@/public/Helm/Aditya_surana.JPG";
+import TanishaSingh from "@/public/Helm/Tanisha_singh.JPG";
 
 const helmData = [
   {
-    name: "Aditya Singh Surana",
+    name: "Aditya Surana",
     position: "Joint General Secretary",
-    image: AdityaSinghSurana,
+    image: AdityaSurana,
   },
   {
     name: "Aditya Kumar Singh",

@@ -59,7 +59,7 @@ const Technex: React.FC = () => {
               >
                 <Box className="top-0 left-0 animate-box-1">
                   <span className="absolute opacity-80 z-[5] block top-[43%] left-[-27px] translate-y-[-50%]">
-                    Photography
+                    Workshops
                   </span>
                 </Box>
                 <Box className="left-1/3 top-0 animate-box-2">
@@ -75,7 +75,7 @@ const Technex: React.FC = () => {
                 </Box>
                 <Box className="left-0 top-1/3 animate-box-4">
                   <span className="absolute opacity-80 z-[5] block top-1/2 left-[55%] translate-x-[-50%] translate-y-[-50%]">
-                    VFX
+                    Hackathons
                   </span>
                 </Box>
                 <Box className="left-2/3 top-1/3 animate-box-5">
@@ -92,7 +92,7 @@ const Technex: React.FC = () => {
                 </Box>
                 <Box className="left-1/3 top-2/3 animate-box-7">
                   <span className="absolute opacity-80 z-[5] block">
-                    Videography
+                    Guest Talks
                   </span>
                 </Box>
                 <Box className="left-2/3 top-2/3 animate-box-8">
