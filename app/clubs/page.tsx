@@ -1,4 +1,4 @@
-import { TracingBeamDemo } from "@/components/clubs/clubs";
+import { TracingBeamDemo, TracingBeamDemoOrg } from "@/components/clubs/clubs";
 import { TypewriterEffectSmooth } from "@/components/ui/text-generate-effect";
 
 export default function Clubs() {
@@ -22,7 +22,7 @@ export default function Clubs() {
       className: "text-3xl sm:text-6xl",
     },
     {
-      text: "with",
+      text: "under",
       className: "text-3xl sm:text-6xl",
     },
     {
@@ -41,8 +41,9 @@ export default function Clubs() {
         <div className="flex justify-center align-middle sm:mt-12 m-4 p-4">
           <TypewriterEffectSmooth words={words1} />
         </div>
-        <TracingBeamDemo clubsData={clubsData} />
+        <TracingBeamDemoOrg orgsData={orgsData} />
       </div>
+      <div className="h-28"></div>
     </>
   );
 }
@@ -344,5 +345,93 @@ const clubsData = [
     ),
     badge: "",
     image: "/clubs/SAE/SAELogo.png",
+  },
+];
+
+const orgsData = [
+  {
+    title: "180 Degrees Consulting",
+    people: [],
+    description: (
+      <>
+        <p>
+          180DC Consulting (IIT-BHU), the world&apos;s largest student-run
+          consultancy, stands as a powerhouse for positive change. Empowered by
+          the closely-knit team, they tackle challenges faced by
+          socially-focussed organisations and startups by crafting innovative
+          solutions that unlock their potential and maximise their impact. Why
+          is it called 180 Degrees? It&apos;s because they work to turn good
+          organisations into great organisations, challenges into opportunities
+          and ideas into reality! Get ready to boost your elite consulting
+          skills with hands-on industry experience. You&apos;ll be part of a
+          passionate and driven team that celebrates its successes, both inside
+          and outside the boardroom!
+        </p>
+      </>
+    ),
+    badge: "",
+    image: "/clubs/180DC/180DCLogo.png",
+  },
+
+  {
+    title: "Future Leaders",
+    people: [],
+    description: (
+      <>
+        <p>
+          Future Leaders Program is a students-led leadership organisation at
+          IIT BHU that cultivates leaders who understand that success is not
+          just about profit, but about creating positive change. Their mission
+          is to empower students to balance ambition with social good, building
+          a future where business and social impact go hand in hand. Through
+          training modules and various resources, Future Leaders Program
+          empowers students to achieve excellence while creating a ripple effect
+          for good. Consulting is all about networking, and at IIT BHU, this is
+          where you start.
+        </p>
+      </>
+    ),
+    badge: "",
+    image: "/clubs/share/share.png",
+  },
+  {
+    title: "The Product Folks",
+    people: [],
+    description: (
+      <>
+        <p>
+          The Product Folks is Asia&apos;s largest volunteer-driven community of
+          product leaders and founders who are passionate about building global
+          products and helping everyone grow together. At the TPF X IIT (BHU)
+          Chapter, we are nurturing the product leaders of tomorrow. We strive
+          to spread awareness about product management and promote learning by
+          doing. Through our initiatives our goal is to help every PM enthusiast
+          on campus become better, whether they are seasoned or are just
+          beginning their journey. Connect with us on our socials and join us to
+          ignite your product sense and start building inspiring products for
+          the world.
+        </p>
+      </>
+    ),
+    badge: "",
+    image: "/clubs/TPF/TPF_logo.png",
+  },
+  {
+    title: "Finshots",
+    people: [],
+    description: (
+      <>
+        <p>
+          Finshots is a financial news media company that publishes daily
+          newsletter on the most Important Financial and Business News in simple
+          words. The collaboration of Finshots X Business Club IIT- BHU brings
+          the College Weekly Newsletter exclusive for the students of IIT-BHU
+          including Current Business and Financial News Breakdown, Money Tips
+          and Jagron of the Week to educate the students.
+        </p>
+      </>
+    ),
+    badge: "",
+    image: "/clubs/finshots/finshots.png",
   },
 ];
