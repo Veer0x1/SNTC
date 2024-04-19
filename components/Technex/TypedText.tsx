@@ -7,7 +7,7 @@ const TypedText: React.FC = () => {
   const el = useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["", "engineers", "creators.", "editors."],
+      strings: ["innovators.", "engineers.", "creators.", "achievors.","dreamers.","builders."],
       typeSpeed: 100,
       backSpeed: 40,
       loop: true,
