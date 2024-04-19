@@ -392,7 +392,7 @@ const orgsData = [
       </>
     ),
     badge: "",
-    image: "/clubs/share/share.png",
+    image: "/clubs/share/share.jpeg",
   },
   {
     title: "The Product Folks",
