@@ -434,4 +434,27 @@ const orgsData = [
     badge: "",
     image: "/clubs/finshots/finshots.png",
   },
+  {
+    title: "HULT Prize",
+    people: [],
+    description: (
+      <>
+        <p>
+          The Hult Prize is a beacon of opportunity for aspiring social
+          entrepreneurs worldwide. With its grand prize of 1 million US dollars
+          and a vast network spanning over 3000 campuses globally, it encourages
+          innovation and impact. The OnCampus team oversees publicity, organizes
+          campus rounds like at IIT (BHU) Varanasi, and facilitates local
+          programs. A new problem statement is released yearly, motivating teams
+          to devise solutions around critical issues such as food security,
+          water access, energy, the environment, and education. Students tackle
+          global challenges through participation and gain invaluable insights,
+          connections, and personal growth opportunities within a diverse
+          entrepreneurial community.
+        </p>
+      </>
+    ),
+    badge: "",
+    image: "/clubs/HULT/hult.png",
+  },
 ];
