@@ -63,10 +63,11 @@ const Technex: React.FC = () => {
                   </span>
                 </Box>
                 <Box className="left-1/3 top-0 animate-box-2">
-                  <BgImg
-                    Image="https://www.yudiz.com/codepen/photography-banner/photography.png"
-                    alt="Photography"
-                  />
+                <Image
+                  src="/technex/3.jpg"
+                  alt="dash-circle"
+                  layout={"fill"}
+                />
                 </Box>
                 <Box className="left-2/3 top-0 animate-box-3">
                   <span className="absolute opacity-80 z-[5] block left-[-10px] bottom-[2px]">
@@ -79,16 +80,18 @@ const Technex: React.FC = () => {
                   </span>
                 </Box>
                 <Box className="left-2/3 top-1/3 animate-box-5">
-                  <BgImg
-                    Image="https://www.yudiz.com/codepen/photography-banner/VFX.png"
-                    alt="VFX"
-                  />
+                <Image
+                  src="/technex/4.jpg"
+                  alt="dash-circle"
+                  layout={"fill"}
+                />
                 </Box>
                 <Box className="left-0 top-2/3 animate-box-6">
-                  <BgImg
-                    Image="https://www.yudiz.com/codepen/photography-banner/under-water.png"
-                    alt="VFX"
-                  />
+                <Image
+    src="/technex/1.jpg" // Adjust the path relative to the public directory
+    alt="VFX"
+    layout="fill"
+  />
                 </Box>
                 <Box className="left-1/3 top-2/3 animate-box-7">
                   <span className="absolute opacity-80 z-[5] block">
@@ -96,9 +99,10 @@ const Technex: React.FC = () => {
                   </span>
                 </Box>
                 <Box className="left-2/3 top-2/3 animate-box-8">
-                  <BgImg
-                    Image="https://www.yudiz.com/codepen/photography-banner/Videography.png"
+                  <Image 
+                    src="/technex/2.jpg"
                     alt="Videography"
+                    layout="fill"
                   />
                 </Box>
               </div>
