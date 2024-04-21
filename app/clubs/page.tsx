@@ -136,46 +136,43 @@ const clubsData = [
     image: "/clubs/QuantClub/QuantLogo.png",
   },
   {
-    title: "Astronomy Club",
+    title: "Robotics Club",
     people: [
       {
         id: 1,
-        name: "Manash Kumar",
+        name: "Dhruv Jain",
         designation: "Secretary",
-        image: "/clubs/Astro/Manash Kumar_Secretary_Astro.jpg",
+        image: "/clubs/Robotics/Dhruv_Jain_Joint_Secretary.jpg",
       },
       {
         id: 2,
-        name: "Prayash Dash",
+        name: "Hemanth Patel",
         designation: "Joint Secretary",
-        image: "/clubs/Astro/Prayash-Dash_Joint-Secretary-Astro.jpg",
+        image: "/clubs/Robotics/Hemanth_Patel_Secy.jpeg",
       },
       {
         id: 3,
-        name: "Yuvraj Singh",
+        name: "Vaibhav Gupta",
         designation: "Joint Secretary",
-        image: "/clubs/Astro/yuvraj Singh_Joint Secretary.jpg",
+        image: "/clubs/Robotics/Vaibhav_Gupta_Jt.Secy.jpg",
       },
     ],
     description: (
       <>
         <p>
-          The Astronomy Club at the Indian Institute of Technology (BHU),
-          Varanasi, is a stellar community passionate about exploring the
-          mysteries of the cosmos. Our mission is to ignite curiosity, inspire
-          awe, and promote scientific inquiry through stargazing sessions,
-          workshops, and educational outreach programs. Whether you&apos;re
-          fascinated by celestial phenomena, astrophotography, or space
-          exploration, the Astronomy Club offers a gateway to the wonders of the
-          universe. Join us to gaze at distant galaxies, witness cosmic events,
-          and deepen your understanding of the cosmos. Connect with us on social
-          media and email to get involved and embark on an astronomical journey
-          of discovery!
+          Our club is dedicated to empowering students with the knowledge and
+          skills necessary to thrive in the rapidly-evolving field of robotics.
+          Whether you are a seasoned robotics enthusiast or just starting out,
+          you all will find a wealth of opportunities for learning and growth
+          within our club. From participating in hands-on projects and
+          workshops, to learning from industry experts through guest lectures,
+          to competing in coding competitions, the Robotics Club at IIT BHU is
+          your launchpad for a successful career in robotics.
         </p>
       </>
     ),
     badge: "",
-    image: "/clubs/Astro/astro-logo-white.png",
+    image: "/clubs/Robotics/RoboLogo.jpg",
   },
   {
     title: "Business Club",
@@ -302,7 +299,7 @@ const clubsData = [
     image: "/clubs/AMC/LOGO.png",
   },
   {
-    title: "Science Of Automotive Engineering (SAE)",
+    title: "Society Of Automotive Engineering (SAE)",
     people: [
       {
         id: 1,
@@ -326,7 +323,7 @@ const clubsData = [
     description: (
       <>
         <p>
-          The Science of Automotive Engineering at the Indian Institute of
+          The Society of Automotive Engineering at the Indian Institute of
           Technology (BHU), Varanasi, is a dynamic community passionate about
           exploring the cutting-edge technologies and innovations in the
           automotive industry. Our mission is to delve into the science,
@@ -335,7 +332,7 @@ const clubsData = [
           workshops, seminars, and hands-on projects, we aim to deepen our
           understanding of automotive engineering principles and applications.
           Whether you&apos;re interested in vehicle dynamics, powertrain
-          systems, or automotive electronics, the Science of Automotive
+          systems, or automotive electronics, the Society of Automotive
           Engineering club offers a platform to delve into the fascinating world
           of automobiles. Join us to learn, collaborate, and innovate in the
           realm of automotive technology. Connect with us on social media and
@@ -345,6 +342,48 @@ const clubsData = [
     ),
     badge: "",
     image: "/clubs/SAE/SAELogo.png",
+  },
+  {
+    title: "Astronomy Club",
+    people: [
+      {
+        id: 1,
+        name: "Manash Kumar",
+        designation: "Secretary",
+        image: "/clubs/Astro/Manash Kumar_Secretary_Astro.jpg",
+      },
+      {
+        id: 2,
+        name: "Prayash Dash",
+        designation: "Joint Secretary",
+        image: "/clubs/Astro/Prayash-Dash_Joint-Secretary-Astro.jpg",
+      },
+      {
+        id: 3,
+        name: "Yuvraj Singh",
+        designation: "Joint Secretary",
+        image: "/clubs/Astro/yuvraj Singh_Joint Secretary.jpg",
+      },
+    ],
+    description: (
+      <>
+        <p>
+          The Astronomy Club at the Indian Institute of Technology (BHU),
+          Varanasi, is a stellar community passionate about exploring the
+          mysteries of the cosmos. Our mission is to ignite curiosity, inspire
+          awe, and promote scientific inquiry through stargazing sessions,
+          workshops, and educational outreach programs. Whether you&apos;re
+          fascinated by celestial phenomena, astrophotography, or space
+          exploration, the Astronomy Club offers a gateway to the wonders of the
+          universe. Join us to gaze at distant galaxies, witness cosmic events,
+          and deepen your understanding of the cosmos. Connect with us on social
+          media and email to get involved and embark on an astronomical journey
+          of discovery!
+        </p>
+      </>
+    ),
+    badge: "",
+    image: "/clubs/Astro/astro-logo-white.png",
   },
 ];
 
