@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import HelmCard from "@/components/cards/HelmCard";
 import AdityaKumarSingh from "@/public/Helm/Aditya_Kumar_Singh.jpeg";
-import AdityaSurana from "@/public/Helm/Aditya_surana.jpeg";
+import AdityaSurana from "@/public/Helm/AdityaSurana.jpg";
 import TanishaSingh from "@/public/Helm/Tanisha_singh.jpeg";
 
 const helmData = [
