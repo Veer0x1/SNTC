@@ -141,13 +141,13 @@ const clubsData = [
       {
         id: 1,
         name: "Dhruv Jain",
-        designation: "Secretary",
+        designation: "Joint Secretary",
         image: "/clubs/Robotics/Dhruv_Jain_Joint_Secretary.jpg",
       },
       {
         id: 2,
         name: "Hemanth Patel",
-        designation: "Joint Secretary",
+        designation: "Secretary",
         image: "/clubs/Robotics/Hemanth_Patel_Secy.jpeg",
       },
       {
