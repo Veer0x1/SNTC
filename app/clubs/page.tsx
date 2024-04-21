@@ -95,21 +95,21 @@ const clubsData = [
     people: [
       {
         id: 1,
-        name: "Yashwini Bansal",
-        designation: "Secretary",
-        image: "/clubs/QuantClub/Helm/QuantClub1.jpeg",
-      },
-      {
-        id: 2,
         name: "Kinshuk Bansal",
         designation: "Joint Secretary",
         image: "/clubs/QuantClub/Helm/QuantClub2.jpeg",
       },
       {
-        id: 3,
+        id: 2,
         name: "Shrey Gupta",
-        designation: "Joint Secretary",
+        designation: "Secretary",
         image: "/clubs/QuantClub/Helm/QuantClub3.jpeg",
+      },
+      {
+        id: 3,
+        name: "Yashwini Bansal",
+        designation: "Joint Secretary",
+        image: "/clubs/QuantClub/Helm/QuantClub1.jpeg",
       },
     ],
     description: (
