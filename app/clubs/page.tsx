@@ -362,7 +362,7 @@ const clubsData = [
         id: 3,
         name: "Yuvraj Singh",
         designation: "Joint Secretary",
-        image: "/clubs/Astro/yuvraj Singh_Joint Secretary.jpg",
+        image: "/clubs/Astro/Yuvraj_Singh_Joint Secretary.jpg",
       },
     ],
     description: (
